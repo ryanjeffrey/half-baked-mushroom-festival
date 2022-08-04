@@ -31,3 +31,11 @@ export function renderFriend(friend) {
     div.append(nameEl, emojiEl);
     return div;
 }
+
+export function getFriend(name, friends) {
+    for (let friend of friends) {
+        if (friend.name === name) {
+            return friend;
+        }
+    }
+}
